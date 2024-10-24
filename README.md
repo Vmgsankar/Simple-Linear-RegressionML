@@ -36,15 +36,11 @@ pip install -r requirements.txt
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/simple-linear-regression.git
+   git clone https:https://github.com/Vmgsankar/Simple-Linear-RegressionML
    ```
 2. Navigate to the project directory:
    ```bash
-   cd simple-linear-regression
-   ```
-3. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
+   cd Simple-Linear-RegressionML
    ```
 
 ## Usage
