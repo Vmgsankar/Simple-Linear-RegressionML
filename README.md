@@ -35,10 +35,6 @@ The dataset used for this project is `Salary_Data.csv`, which consists of the fo
    ```bash
    cd Simple-Linear-RegressionML
    ```
-3. Install required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Usage
 The project can be used to:
