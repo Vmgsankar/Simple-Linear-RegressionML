@@ -1,4 +1,3 @@
-
 # Simple Linear Regression Model
 
 ## Table of Contents
@@ -9,7 +8,6 @@
 - [Usage](#usage)
 - [Modeling Process](#modeling-process)
 - [Results](#results)
-- [License](#license)
 
 ## Overview
 This project demonstrates the implementation of a **Simple Linear Regression** model to predict employee salary based on years of experience. The dataset used contains two features: `YearsExperience` and `Salary`.
@@ -28,11 +26,6 @@ The dataset used for this project is `Salary_Data.csv`, which consists of the fo
   - `seaborn`
   - `scikit-learn`
 
-You can install the required dependencies by running:
-```bash
-pip install -r requirements.txt
-```
-
 ## Installation
 1. Clone the repository:
    ```bash
@@ -42,23 +35,41 @@ pip install -r requirements.txt
    ```bash
    cd Simple-Linear-RegressionML
    ```
+3. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
-1. Load the dataset:
-   ```python
-   df_sal = pd.read_csv('Salary_Data.csv')
-   df_sal.head()
-   ```
-2. Train a simple linear regression model using `scikit-learn`:
-   ```python
-   from sklearn.model_selection import train_test_split
-   from sklearn.linear_model import LinearRegression
+The project can be used to:
+- Analyze the relationship between years of experience and salary
+- Predict salaries for given years of experience
+- Understand basic linear regression implementation
+- Visualize salary trends based on experience
 
-   X = df_sal[['YearsExperience']]
-   y = df_sal['Salary']
+## Modeling Process
+1. **Data Preprocessing**
+   - Data loading and inspection
+   - Handling missing values
+   - Feature scaling if required
+   - Train-test split (80-20 ratio)
 
-   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+2. **Model Development**
+   - Linear regression model initialization
+   - Model training using training data
+   - Prediction on test data
+   - Model evaluation and validation
 
-   model = LinearRegression()
-   model.fit(X_train, y_train)
-   ```
+3. **Visualization**
+   - Scatter plots of actual vs predicted values
+   - Regression line visualization
+   - Residual analysis plots
+
+## Results
+- Model Performance Metrics:
+  - R-squared (R²) score
+  - Mean Absolute Error (MAE)
+  - Mean Squared Error (MSE)
+  - Root Mean Squared Error (RMSE)
+- Visual representation of predictions
+- Analysis of model accuracy and limitations
